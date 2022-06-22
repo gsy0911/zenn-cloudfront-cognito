@@ -73,6 +73,7 @@ export class CognitoStack extends Stack {
       }
     })
 
+    // App Clients
     userPool.addClient("publicClient", {
       userPoolClientName: "publicClient",
       generateSecret: false,
